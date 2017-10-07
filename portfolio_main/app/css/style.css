@@ -10,6 +10,10 @@
   font-family: 'Miandra';
   src: url("../fonts/Miandra-gd/miandra-gd.ttf"); }
 
+@font-face {
+  font-family: 'Futura New';
+  src: url("../fonts/Proxima Nova/FuturaNewBold.otf"); }
+
 header {
   height: 100vh; }
 
@@ -48,7 +52,7 @@ main {
 
 .main-wrp {
   height: 100%;
-  padding: 5% 0 5% 0;
+  padding: 5%;
   color: white; }
 
 .block {
@@ -56,9 +60,20 @@ main {
   background-position: center;
   background-size: cover; }
 
+.block-wrapper {
+  padding: 10% 5% 5% 50px; }
+  .block-wrapper h4 {
+    font-family: Proxima Nova;
+    font-size: 1.8rem; }
+  .block-wrapper h3 {
+    font-family: Futura New;
+    font-size: 3rem;
+    font-weight: 600; }
+
 .first {
   margin: 0 auto;
-  width: 1000px;
+  max-width: 1000px;
+  min-width: 550px;
   height: 475px;
   background-image: url(../img/first_section.png);
   background-color: orange; }
@@ -68,6 +83,7 @@ main {
   background-color: #7f1296; }
 
 .third {
+  margin-left: 20px;
   background-image: url(../img/third_section.png);
   background-color: #00a7f1; }
 
@@ -75,22 +91,42 @@ main {
   background-image: url(../img/fourth_section.png);
   background-color: #4481e6;
   height: 475px;
-  width: 760px; }
+  max-width: 760px;
+  min-width: 550px; }
+
+.rowOne {
+  min-width: 658px; }
+  .rowOne .first div :nth-child(2) {
+    padding-top: 5%; }
+  .rowOne .first div :nth-child(3) {
+    padding-top: 3%; }
 
 .rowTwo {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
+  min-width: 658px;
   margin: 0 auto;
   margin-top: 20px; }
   .rowTwo section {
-    width: 490px;
+    width: 100%;
+    max-width: 490px;
+    min-width: 48%;
     height: 600px; }
+    .rowTwo section div :first-child {
+      margin-top: 20%; }
+    .rowTwo section div :nth-child(2) {
+      margin-top: 60px; }
 
 .rowThree {
   margin: 0 auto;
   margin-top: 20px;
+  min-width: 658px;
   max-width: 1000px; }
+  .rowThree .fourth div :nth-child(2) {
+    padding-top: 10%; }
+  .rowThree .fourth div :nth-child(3) {
+    padding-top: 3%; }
 
 footer {
   height: 150px;
