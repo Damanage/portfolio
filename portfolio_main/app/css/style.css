@@ -22,6 +22,7 @@ header {
   margin: 0 auto; }
 
 .head-wrp {
+  min-width: 750px;
   padding: 5% 5% 0 5%;
   display: flex;
   justify-content: space-between; }
@@ -129,5 +130,33 @@ main {
     padding-top: 3%; }
 
 footer {
-  height: 150px;
   background-color: white; }
+
+.footer-wrp {
+  padding: 2% 5% 2% 5%; }
+  .footer-wrp .logo {
+    display: inline-block;
+    width: 74px; }
+    .footer-wrp .logo .logo-wrp {
+      padding: 10px;
+      border-radius: 50%;
+      background-color: #ff9e06;
+      color: white;
+      font-family: Miandra;
+      font-size: 2rem;
+      font-weight: 400; }
+      .footer-wrp .logo .logo-wrp span {
+        margin-left: 5%; }
+  .footer-wrp .contact {
+    display: inline-block;
+    font-family: Proxima Nova;
+    color: #1a202d; }
+    .footer-wrp .contact div {
+      display: inline-block; }
+
+.contact-data div {
+  padding-left: 45px; }
+
+.contact-title h3 {
+  padding-left: 15px;
+  font-size: 1.5em; }
